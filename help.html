@@ -1,0 +1,1369 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Project 1 - Craigslist Redesign</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		
+		<!-- Navigation -->
+		<div class="navigation full gray">
+			<div class="container">
+				<nav class="relative">
+					<a href="index.html"><img src="img/logo.png" alt="craigslist logo with peace sign"></a>
+					<ul>
+<!-- Home -->
+						<li class="alter"><a href="index.html">Home</a></li>
+<!-- Classifieds -->
+						<li class="alter dropdown open"><a class="color" href="categories.html">Classifieds<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content relative">
+								<div class="content-list gray">
+									<ol>
+		<!-- Community -->
+										<li class="change community apear"><a class="start lister highlight" href="#">Community</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Activities</a></li>
+														<li><a href="#">Artists</a></li>
+														<li><a href="#">Childcare</a></li>
+														<li><a href="#">Classes</a></li>
+														<li><a href="#">Events</a></li>
+														<li><a href="#">General</a></li>
+														<li><a href="#">Groups</a></li>
+														<li><a href="#">Local News</a></li>
+														<li><a href="#">Lost &amp; Found</a></li>
+														<li><a href="#">Musicians</a></li>
+														<li><a href="#">Pets</a></li>
+														<li><a href="#">Politics</a></li>
+														<li><a href="#">Rideshare</a></li>
+														<li><a href="#">Volunteers</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Personals -->
+										<li class="change personals"><a class="lister" href="#">Personals</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Strictly Platonic</a></li>
+														<li><a href="#">Women Seek Woman</a></li>
+														<li><a href="#">Woman Seek Man</a></li>
+														<li><a href="#">Men Seek Women</a></li>
+														<li><a href="#">Men Seek Men</a></li>
+														<li><a href="#">Misc Romance</a></li>
+														<li><a href="#">Casual Encounters</a></li>
+														<li><a href="#">Missed Connections</a></li>
+														<li><a href="#">Rants and Raves</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Forums -->
+										<li class="change forums"><a class="lister" href="#">Forums</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<div class="a sublist">
+														<ol>
+															<li><a href="#">Apple</a></li>
+															<li><a href="#">Arts</a></li>
+															<li><a href="#">Atheist</a></li>
+															<li><a href="#">Autos</a></li>
+															<li><a href="#">Beauty</a></li>
+															<li><a href="#">Bikes</a></li>
+															<li><a href="#">Celebs</a></li>
+															<li><a href="#">Comp</a></li>
+															<li><a href="#">Craft</a></li>
+															<li><a href="#">Diet</a></li>
+															<li><a href="#">Divorce</a></li>
+															<li><a href="#">Dying</a></li>
+															<li><a href="#">Eco</a></li>
+															<li><a href="#">Educ</a></li>
+															<li><a href="#">Feedbk</a></li>
+															<li><a href="#">Film</a></li>
+															<li><a href="#">Fitness</a></li>
+															<li><a href="#">Fixit</a></li>
+															<li><a href="#">Food</a></li>
+															<li><a href="#">Frugal</a></li>
+															<li><a href="#">Gaming</a></li>
+															<li><a href="#">Garden</a></li>
+															<li><a href="#">Haiku</a></li>
+															<li><a href="#">Help</a></li>
+															<li><a href="#">History</a></li>
+															<li><a href="#">Housing</a></li>
+															<li><a href="#">Jobs</a></li>
+															<li><a href="#">Jokes</a></li>
+															<li><a href="#">Kink</a></li>
+															<li><a href="#">Legal</a></li>
+															<li><a href="#">Linux</a></li>
+															<li><a href="#">M4M</a></li>
+															<li><a href="#">Manners</a></li>
+															<li><a href="#">Marriage</a></li>
+															<li><a href="#">Media</a></li>
+														</ol>
+													</div>
+		<!-- Buttons to Toggle Sub-Content -->
+													<div class="toggleButton">
+														<button onclick="show('.a')"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+														<button onclick="show('.b')"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+													</div>
+													<div class="b sublist">
+														<ol>
+															<li><a href="#">Money</a></li>
+															<li><a href="#">Motocy</a></li>
+															<li><a href="#">Music</a></li>
+															<li><a href="#">Nonprofit</a></li>
+															<li><a href="#">Open</a></li>
+															<li><a href="#">Outdoor</a></li>
+															<li><a href="#">Over 50</a></li>
+															<li><a href="#">Parent</a></li>
+															<li><a href="#">Pets</a></li>
+															<li><a href="#">Philos</a></li>
+															<li><a href="#">Photo</a></li>
+															<li><a href="#">P. O. C.</a></li>
+															<li><a href="#">Politics</a></li>
+															<li><a href="#">Psych</a></li>
+															<li><a href="#">Queer</a></li>
+															<li><a href="#">Recover</a></li>
+															<li><a href="#">Religion</a></li>
+															<li><a href="#">Romance</a></li>
+															<li><a href="#">Science</a></li>
+															<li><a href="#">Spirit</a></li>
+															<li><a href="#">Sports</a></li>
+															<li><a href="#">Tax</a></li>
+															<li><a href="#">Travel</a></li>
+															<li><a href="#">Tv</a></li>
+															<li><a href="#">Vegan</a></li>
+															<li><a href="#">W4W</a></li>
+															<li><a href="#">Wed</a></li>
+															<li><a href="#">Wine</a></li>
+															<li><a href="#">Women</a></li>
+															<li><a href="#">Words</a></li>
+															<li><a href="#">Writing</a></li>
+															<li><a href="#">Yoga</a></li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</li>
+		<!-- Housing -->
+										<li class="change housing"><a class="lister" href="#">Housing</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Apts / Housing</a></li>
+														<li><a href="#">Housing Sawp</a></li>
+														<li><a href="#">Housing Wanted</a></li>
+														<li><a href="#">Office / Commercial</a></li>
+														<li><a href="#">Parking / Storage</a></li>
+														<li><a href="#">Real Estate for Sale</a></li>
+														<li><a href="#">Rooms / Shared</a></li>
+														<li><a href="#">Rooms Wanted</a></li>
+														<li><a href="#">Sublets / Temporary</a></li>
+														<li><a href="#">Vacation Rentals</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- For Sale -->
+										<li class="change for_sale"><a class="lister" href="categories.html">For Sale</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<div class="a sublist">
+														<ol>
+															<li><a href="#">Antiques</a></li>
+															<li><a href="#">Appliances</a></li>
+															<li><a href="#">Arts &amp; Crafts</a></li>
+															<li><a href="#">ATV / UTV / SNO</a></li>
+															<li><a href="#">Auto Parts</a></li>
+															<li><a href="#">Baby &amp; Kid</a></li>
+															<li><a href="#">Barter</a></li>
+															<li><a href="#">Beauty &amp; Health</a></li>
+															<li><a href="#">Bikes</a></li>
+															<li><a href="#">Boats</a></li>
+															<li><a href="#">Books</a></li>
+															<li><a href="#">Business</a></li>
+															<li><a href="categories.html">Cars &amp; Trucks</a></li>
+															<li><a href="#">CDs / DVDs / VHS</a></li>
+															<li><a href="#">Cell Phones</a></li>
+															<li><a href="#">Clothes &amp; Acc</a></li>
+															<li><a href="#">Collectibles</a></li>
+															<li><a href="#">Computers</a></li>
+															<li><a href="#">Electronics</a></li>
+															<li><a href="#">Farm &amp; Garden</a></li>
+															<li><a href="#">Free</a></li>
+															<li><a href="#">Furniture</a></li>
+															<li><a href="#">Garage Sale</a></li>
+															<li><a href="#">General</a></li>
+															<li><a href="#">Heavy Equip</a></li>
+															<li><a href="#">Household</a></li>
+															<li><a href="#">Jewelry</a></li>
+															<li><a href="#">Materials</a></li>
+															<li><a href="#">Motorcycles</a></li>
+															<li><a href="#">Music Instr</a></li>
+															<li><a href="#">Photo &amp; Video</a></li>
+															<li><a href="#">RVS &amp; Camp</a></li>
+															<li><a href="#">Sporting</a></li>
+															<li><a href="#">Tickets</a></li>
+															<li><a href="#">Tools</a></li>
+														</ol>
+													</div>
+		<!-- Buttons to Toggle Sub-Content -->
+													<div class="toggleButton">
+														<button onclick="show('.a')"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+														<button onclick="show('.b')"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+													</div>
+													<div class="b sublist">
+														<ol>
+															<li><a href="#">Toys &amp; Games</a></li>
+															<li><a href="#">Trailers</a></li>
+															<li><a href="#">Video Gaming</a></li>
+															<li><a href="#">Wanted</a></li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</li>
+		<!-- Services -->
+										<li class="change services"><a class="lister" href="#">Services</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Automotive</a></li>
+														<li><a href="#">Beauty</a></li>
+														<li><a href="#">Cell / Mobile</a></li>
+														<li><a href="#">Computer</a></li>
+														<li><a href="#">Creative</a></li>
+														<li><a href="#">Cycle</a></li>
+														<li><a href="#">Event</a></li>
+														<li><a href="#">Farm &amp; Garden</a></li>
+														<li><a href="#">Financial</a></li>
+														<li><a href="#">Household</a></li>
+														<li><a href="#">Labor / Move</a></li>
+														<li><a href="#">Legal</a></li>
+														<li><a href="#">Lessons</a></li>
+														<li><a href="#">Marine</a></li>
+														<li><a href="#">Pet</a></li>
+														<li><a href="#">Real Estate</a></li>
+														<li><a href="#">Skilled Trade</a></li>
+														<li><a href="#">Small Biz Ads</a></li>
+														<li><a href="#">Therapeutic</a></li>
+														<li><a href="#">Travel / Vacation</a></li>
+														<li><a href="#">Write / Ed / Tran</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Jobs -->
+										<li class="change jobs"><a class="lister" href="#">Jobs</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Accting/Finance</a></li>
+														<li><a href="#">Admin/Office</a></li>
+														<li><a href="#">Arch/Engineering</a></li>
+														<li><a href="#">Art/Media/Design</a></li>
+														<li><a href="#">Biotech/Science</a></li>
+														<li><a href="#">Business/Management</a></li>
+														<li><a href="#">Customer Service</a></li>
+														<li><a href="#">Education</a></li>
+														<li><a href="#">Food/Bev/Hosp</a></li>
+														<li><a href="#">General Labor</a></li>
+														<li><a href="#">Government</a></li>
+														<li><a href="#">Human Resources</a></li>
+														<li><a href="#">Internet Engineers</a></li>
+														<li><a href="#">Legal/Paralege</a></li>
+														<li><a href="#">Manufacturing</a></li>
+														<li><a href="#">Marketing/Print/Ad</a></li>
+														<li><a href="#">Medical/Health</a></li>
+														<li><a href="#">Nonprofit Sector</a></li>
+														<li><a href="#">Real Estate</a></li>
+														<li><a href="#">Retail/Wholesale</a></li>
+														<li><a href="#">Sales/Biz Dev</a></li>
+														<li><a href="#">Salon/Spa/Fitness</a></li>
+														<li><a href="#">Security</a></li>
+														<li><a href="#">Skilled Trade/Craft</a></li>
+														<li><a href="#">Software/QA/DBA</a></li>
+														<li><a href="#">Systems/Network</a></li>
+														<li><a href="#">Technical Support</a></li>
+														<li><a href="#">Transport</a></li>
+														<li><a href="#">Tv/Film/Video</a></li>
+														<li><a href="#">Web/Info Design</a></li>
+														<li><a href="#">Writing/Editing</a></li>
+														<li><a href="#">ETC</a></li>
+														<li><a href="#">Part-Time</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Gigs -->
+										<li class="change gigs"><a class="lister" href="#">Gigs</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Resumes</a></li>
+														<li><a href="#">Computer</a></li>
+														<li><a href="#">Creative</a></li>
+														<li><a href="#">Crew</a></li>
+														<li><a href="#">Domestic</a></li>
+														<li><a href="#">Event</a></li>
+														<li><a href="#">Labor</a></li>
+														<li><a href="#">Talent</a></li>
+														<li><a href="#">Writing</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+		<!-- Search Bar -->
+								<div class="content-search">
+									<input type="text" placeholder="Search Craigslist">
+									<button><i class="fa fa-search" aria-hidden="true"></i></button>
+								</div>
+							</div>
+						</li>
+<!-- Calendar -->
+						<li class="alter dropdown"><a class="color" href="#">Calender<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content relative">
+								<div class="cal-contain">
+									<div id="calendar"></div>
+								</div>
+								<div class="cal-event today">
+									<h2>Today</h2>
+
+									<a href="#"><div class="event">
+										<h3>Lakefront Workout Dance Party</h3>
+										<p><strong>10:00am</strong></p>
+										<div class="clearFix"></div>
+										<p>Clermont, Fl.</p>
+										<div class="clearFix"></div>
+									</div></a>
+
+									<a href="#"><div class="event">
+										<h3>Dad and Mom-me Time Workshop</h3>
+										<p><strong>11:00am</strong></p>
+										<div class="clearFix"></div>
+										<p>Orlando, Fl.</p>
+										<div class="clearFix"></div>
+									</div></a>
+
+									<a href="#"><div class="event">
+										<h3>Violin Lessons with a Professional</h3>
+										<p><strong>N/A</strong></p>
+										<div class="clearFix"></div>
+										<p>The Villages, Fl.</p>
+										<div class="clearFix"></div>
+									</div></a>
+
+									<a href="#"><div class="event">
+										<h3>Dance with OUR Stars!!</h3>
+										<p><strong>7:30pm</strong></p>
+										<div class="clearFix"></div>
+										<p>Discovery Church</p>
+										<div class="clearFix"></div>
+									</div></a>
+
+
+
+								</div>
+								<div class="cal-event future">
+									<ol>
+										<li></li>
+									</ol>
+								</div>
+								<div class="clearFix"></div>
+							</div>
+						</li>
+<!-- Location -->
+						<li class="alter dropdown open"><a class="color" href="#">Orlando<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content relative">
+								<div class="content-list gray">
+									<ol>
+		<!-- Nearby -->
+										<li class="change nearby apear"><a class="start lister highlight" href="#">Nearby</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Albany</a></li>
+														<li><a href="#">Auburn</a></li>
+														<li><a href="#">Augusta</a></li>
+														<li><a href="#">Brunswick</a></li>
+														<li><a href="#">Charleston</a></li>
+														<li><a href="#">Columbus</a></li>
+														<li><a href="#">Daytona Beach</a></li>
+														<li><a href="#">Dothan</a></li>
+														<li><a href="#">Florida Keys</a></li>
+														<li><a href="#">Fort Meyers</a></li>
+														<li><a href="#">Gainesville</a></li>
+														<li><a href="#">Heartland</a></li>
+														<li><a href="#">Hilton Head</a></li>
+														<li><a href="#">Jacksonville</a></li>
+														<li><a href="#">Lake City</a></li>
+														<li><a href="#">Lakeland</a></li>
+														<li><a href="#">Macon</a></li>
+														<li><a href="#">Ocala</a></li>
+														<li><a href="#">Okaloosa</a></li>
+														<li><a href="#">Panama City</a></li>
+														<li><a href="#">Sarasota</a></li>
+														<li><a href="#">Savannah</a></li>
+														<li><a href="#">South Florida</a></li>
+														<li><a href="#">Space Coast</a></li>
+														<li><a href="#">Statesboro</a></li>
+														<li><a href="#">St Augustine</a></li>
+														<li><a href="#">Tallahassee</a></li>
+														<li><a href="#">Tampa Bay</a></li>
+														<li><a href="#">Treasure Coast</a></li>
+														<li><a href="#">Valdosta</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- US Cities -->
+										<li class="change cities"><a class="lister" href="#">US Cities</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Atlanta</a></li>
+														<li><a href="#">Austin</a></li>
+														<li><a href="#">Boston</a></li>
+														<li><a href="#">Chicago</a></li>
+														<li><a href="#">Dallas</a></li>
+														<li><a href="#">Denver</a></li>
+														<li><a href="#">Detroit</a></li>
+														<li><a href="#">Houston</a></li>
+														<li><a href="#">Las Vegas</a></li>
+														<li><a href="#">Los Angeles</a></li>
+														<li><a href="#">Miami</a></li>
+														<li><a href="#">Minneapolis</a></li>
+														<li><a href="#">New York</a></li>
+														<li><a href="#">Orange Co</a></li>
+														<li><a href="#">Philadelphia</a></li>
+														<li><a href="#">Phoenix</a></li>
+														<li><a href="#">Portland</a></li>
+														<li><a href="#">Raleigh</a></li>
+														<li><a href="#">Sacramento</a></li>
+														<li><a href="#">San Diego</a></li>
+														<li><a href="#">Seattle</a></li>
+														<li><a href="#">San Fransisco</a></li>
+														<li><a href="#">Washington DC</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- US States -->
+										<li class="change states"><a class="lister" href="#">US States</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<div class="a sublist">
+														<ol>
+															<li><a href="#">Alabama</a></li>
+															<li><a href="#">Alaska</a></li>
+															<li><a href="#">Arizona</a></li>
+															<li><a href="#">Arkansas</a></li>
+															<li><a href="#">California</a></li>
+															<li><a href="#">Colorado</a></li>
+															<li><a href="#">Connecticut</a></li>
+															<li><a href="#">Delaware</a></li>
+															<li><a href="#">Florida</a></li>
+															<li><a href="#">Georgia</a></li>
+															<li><a href="#">Guam</a></li>
+															<li><a href="#">Hawaii</a></li>
+															<li><a href="#">Idaho</a></li>
+															<li><a href="#">Illinois</a></li>
+															<li><a href="#">Indiana</a></li>
+															<li><a href="#">Iowa</a></li>
+															<li><a href="#">Kansas</a></li>
+															<li><a href="#">Kentucky</a></li>
+															<li><a href="#">Louisiana</a></li>
+															<li><a href="#">Maine</a></li>
+															<li><a href="#">Michigan</a></li>
+															<li><a href="#">Minnesota</a></li>
+															<li><a href="#">Mississippi</a></li>
+															<li><a href="#">Missouri</a></li>
+															<li><a href="#">Montana</a></li>
+															<li><a href="#">North Carolina</a></li>
+															<li><a href="#">Nebraska</a></li>
+															<li><a href="#">Nevada</a></li>
+															<li><a href="#">New Jersey</a></li>
+															<li><a href="#">New Mexico</a></li>
+															<li><a href="#">New York</a></li>
+															<li><a href="#">New Hampshire</a></li>
+															<li><a href="#">North Dakota</a></li>
+															<li><a href="#">Ohio</a></li>
+															<li><a href="#">Oklahoma</a></li>
+														</ol>
+													</div>
+		<!-- Buttons to Toggle Sub-Content -->
+													<div class="toggleButton">
+														<button onclick="show('.a')"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+														<button onclick="show('.b')"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+													</div>
+													<div class="b sublist">
+														<ol>
+															<li><a href="#">Oregon</a></li>
+															<li><a href="#">Pennsylvania</a></li>
+															<li><a href="#">Puerto Rico</a></li>
+															<li><a href="#">Rhode Island</a></li>
+															<li><a href="#">South Carolina</a></li>
+															<li><a href="#">South Dakota</a></li>
+															<li><a href="#">Tennessee</a></li>
+															<li><a href="#">Texas</a></li>
+															<li><a href="#">Utah</a></li>
+															<li><a href="#">Vermont</a></li>
+															<li><a href="#">Virginia</a></li>
+															<li><a href="#">Washington</a></li>
+															<li><a href="#">Washington DC</a></li>
+															<li><a href="#">West Virginia</a></li>
+															<li><a href="#">Wisconsin</a></li>
+															<li><a href="#">Wyoming</a></li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</li>
+		<!-- Canada -->
+										<li class="change canada"><a class="lister" href="#">Canada</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Calgary</a></li>
+														<li><a href="#">Edmonton</a></li>
+														<li><a href="#">Halifax</a></li>
+														<li><a href="#">Montreal</a></li>
+														<li><a href="#">Ottawa</a></li>
+														<li><a href="#">Saskatoon</a></li>
+														<li><a href="#">Toronto</a></li>
+														<li><a href="#">Vancouver</a></li>
+														<li><a href="#">Victoria</a></li>
+														<li><a href="#">Winnipeg</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Worldwide -->
+										<li class="change worldwide"><a class="lister" href="categories.html">Worldwide</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Africa</a></li>
+														<li><a href="#">Americas</a></li>
+														<li><a href="#">Asia</a></li>
+														<li><a href="#">Europe</a></li>
+														<li><a href="#">Middle East</a></li>
+														<li><a href="#">Oceania</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+		<!-- Search Bar -->
+								<div class="content-search">
+									<input type="text" placeholder="Zip, City, State, Country">
+									<button><i class="fa fa-search" aria-hidden="true"></i></button>
+								</div>
+							</div>
+						</li>
+<!-- Profile -->
+						<li class="alter dropdown open"><a class="color" href="#"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<div class="dropdown-content relative">
+								<div class="content-list gray">
+									<ol>
+		<!-- Account -->
+										<li class="change account apear"><a class="start lister highlight" href="#">Account</a>
+											<div class="content-content">
+												<div class="content-sublist">
+													<div class="profileImg"></div>
+													<div class="accountInfo">
+														<h2>tombeaver22@gmail.com</h2><br>
+														<p><strong>Member Since: </strong>Jan 10th, 2018</p>
+														<p><strong>Total Posts: </strong>1</p>
+														<br>
+														<a href="#openModal">Post Classified</a>
+													</div>
+
+												</div>
+											</div>
+										</li>
+		<!-- Postings -->
+										<li class="change postings"><a class="lister" href="#">Postings</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Atlanta</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Drafts -->
+										<li class="change drafts"><a class="lister" href="#">Drafts</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<div class="a sublist">
+														<ol>
+															<li><a href="#">Alabama</a></li>
+														</ol>
+													</div>
+												</div>
+											</div>
+										</li>
+		<!-- Searches -->
+										<li class="change searches"><a class="lister" href="#">Searches</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Calgary</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Favorites -->
+										<li class="change favorites"><a class="lister" href="#">Favorites</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Calgary</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Settings -->
+										<li class="change settings"><a class="lister" href="categories.html">Settings</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Africa</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+		<!-- Billing -->
+										<li class="change billing"><a class="lister" href="#">Billing</a>
+											<div class="content-content">
+												<div class="content-sublist ">
+													<ol>
+														<li><a href="#">Calgary</a></li>
+													</ol>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Hamburger Navigation -->
+				<div id="navSmall" class="relative">
+					<div class="logoSmall"></div>
+					<div class="menuNav">
+						<div class="navMenu relative">
+							<div class="barMenu"></div>
+							<div class="barMenu"></div>
+							<div class="barMenu"></div>
+						</div>
+					</div>
+
+					<!-- Small Menu Screen -->
+					<div class="smallMenu">
+
+					</div>
+					<div class="clearFix"></div>
+				</div>
+			</div>
+		</div>
+
+		
+
+<!-- Orlando -->
+		<div class="space"></div>
+
+<!-- FAQs -->
+		<div class="full">
+			<div class="container relative helpPage">
+				<div class="tabsMenu">
+					<button class="tablinks activeTab" onclick="openTab('#postings')">Classified Postings</button>
+					<button class="tablinks" onclick="openTab('#paid')">Paid Postings</button>
+					<button class="tablinks" onclick="openTab('#fraud')">Avoiding Scams and Fraud</button>
+					<button class="tablinks" onclick="openTab('#legal')">LEGAL, Copyright, Harassment</button>
+					<button class="tablinks" onclick="openTab('#misc')">Miscellaneous</button>
+				</div>
+
+				<div class="tabsContent defaultOpen" id="postings">
+					<h1>Help, Tips, and Frequently Asked Questions</h1>
+					<div id="accordion0">
+						<h3>How to Post?</h3>
+							<div>
+								<h2>How to post a free Craigslist Post?</h2>
+								<p>Follow the steps below to submit a free post to craigslist without using an account.</p>
+								<p>If you want to post using a craigslist account, go to your account homepage. Select a city from the dropdown at far right, click "go," and follow the steps below starting with step 3. (If you have trouble finding the right craigslist site, visit our list of available sites, and choose the most appropriate one.)</p>
+								<p class="finePrint">Please note that the steps may vary a bit depending on the category of your post.</p>
+								<hr>
+								<p>Choose a catefory for your post</p>
+								<ol class="orderly">
+									<li><strong>Visit our Homepage, </strong><a href="https://www.craigslist.com">craigslist.com</a>
+									<ul>
+										<li>Make sure the location named at the top is where you want to post.</li>
+										<li>If the location is not correct, visit our list of available sites, and choose the most appropriate one.</li>
+									</ul></li>
+									<li>Click <strong>"post to classifieds"</strong> in the "Account" dropdown menu</li>
+									<li><strong>Select a Category</strong> for your post<br>
+										<p class="finePrint">Depending on the type of post, you may be asked to choose additional categories</p>
+										<ul>
+											<li>In "for sale" you can select a more specific category (such as "bicycles - by owner").</li>
+											<li>In some cities, you may select a subarea (e.g. "manhattan") and neighborhood (e.g. "SoHo").</li>
+										</ul>
+										Create your post.</li>
+									<li><strong>Enter the texr</strong> for your post<br>
+										<p class="finePrint">This page will vary depending on the category of your post. Important fields include:</p>
+										<ul>
+											<li><strong>posting title:</strong> your post's name. It will appear in the main list of posts.</li>
+											<li><strong>posting description:</strong> the body of your post.</li>
+											<li><strong>reply to:</strong> the email address you want to use for responses. Please enter it twice.</li>
+										</ul></li>
+									<li>When you are finished writing your post, <strong>click "continue"</strong> at the bottom of the screen</li>
+									<li>In some categories you will have the option to add images to your post.
+										<ul>
+											<li>When you're finished adding images, <strong>click "done with images."</strong></li>
+										</ul>
+										Confirm and Submit</li>
+									<li><strong>Make sure your post looks right.</strong>
+										<ul>
+											<li>Confirm that your email address and the location of your post are accurate.</li>
+											<li>To make changes, <strong>click "edit text" or "edit images."</strong></li>
+											<li>If everything looks good, <strong>click "publish."</strong></li>
+										</ul></li>
+									<li>You will now need to <strong>confirm your post via email.</strong>
+										<ul>
+											<li>When the system says "further action is required," check your email for a message from craigslist.</li>
+										</ul></li>
+									<li><strong>Open the email</strong> from craigslist, and <strong>click the confirmation link.</strong>
+										<ul>
+											<li>If you are unable to click on the link, try copying and pasting it into your web browser.</li>
+											<li>You may be asked to review the terms of use or confirm your phone number.</li>
+										</ul>
+										If all goes right, your post should appear on craigslist about 15 minutes after your confirmation.</li>
+								</ol>
+							</div>
+						<h3>Are All Ads Free?</h3>								
+							<div>
+								<h2>All craigslist postings are free, except for:</h2><br>
+								<ul>
+									<li>Job postings in selected areas - &#36;7-75 (fee varies by area)</li>
+									<li>Brokered apartment rentals in NYC area - &#36;10</li>
+									<li>Various by-dealer categories in the US - &#36;3-5</li>
+									<li>Cars/trucks by-dealer in the US, Vancouver BC - &#36;5</li>
+									<li>Furniture by-dealer in the US, Vancouver BC - &#36;3</li>
+									<li>Therapeutic services in the US - &#36;10 (reposts of live ads &#36;5)</li>
+								</ul>
+								<p>Visa, MasterCard, and American Express are accepted.</p>
+								<p>Paid posting accounts provide additional payment options in many cases.</p>
+								<p>Questions? Please email billing@craigslist.org.</p>
+							</div>
+						<h3>How to Reply</h3>
+							<div>
+								<p><strong>Q: What if I get a "Default Mail Client Not Properly Installed" message?</strong></p>
+								<p>A: Use one of the other options displayed by the "Reply" button</p>
+								<p><strong>Q: How do craigslist 2-way relay email addresses work? </strong></p>
+								<p>A: Replies to live posts are relayed to poster's email address. Learn more.</p>
+								<p><strong>Q: I'm getting "message undeliverable" errors. What should I do?</strong></p>
+								<p>A: Make sure (1) ad is still live, (2) address is correct, (3) no oversized attachmen</ts
+								<p><strong>Q: The reply button won't open.</strong></p>
+								<p>A: We have received reports of the reply button not displaying a pop-up menu
+								when clicked. Users have reported success in fixing this issue by taking
+								either of these steps:</p>
+
+								<p><strong>*</strong> Check the add-ons that are installed on your Internet browser. (An
+								add-on is a browser extension, or a piece of software, that modifies the
+								browsing experience.) You can view your browser's add-ons by navigating to
+								the Tools or Preferences menu and clicking on Add-ons. You can disable any
+								unfamiliar add-ons one by one until the button works.</p>
+
+								<p><strong>*</strong> Check to see if you are navigating the web using 'Private Browsing'.
+								This setting can be found in the Preferences menu of your Internet
+								browser. Unchecking this and re-starting your web browser may resolve the
+								issue.</p>
+							</div>
+						<h3>What is 2-way email Relay?</h3>
+							<div>
+								<h2>Craigslist has implemented 2-way email relay to help stop spam and scams.</h2>
+
+								<p>When replying to a post you'll see an address like:
+								<strong>abcde-0123456789@sale.craigslist.org</strong></p>
+
+								<p>When answering an email you'll see an address like:
+								<strong>rcc9la26d7534400a6a03514c34f9200@reply.craigslist.org</strong></p>
+
+								<p>Use your email program as you normally would.</p>
+
+								<p><strong>PLEASE NOTE: </strong>The real name field (e.g. Jane Doe) in your email program is passed through to the recipient. Any contact information in the body of your message will pass through unaltered.</p>
+							</div>
+						<h3>How to Edit or Delete?</h3>
+							<div>
+								<h2>Editing and deleting craigslist posts</h2>
+								<ul>
+									<li>If you want to make changes to your active craigslist post, you can <strong>edit</strong> it. When editing a post you can change the title, description, images, and category.</li>
+									<li>You can remove your post manually at any time by choosing the <strong>delete</strong> option. Please note that all craigslist posts will expire automatically after a certain amount of time has elapsed.</li>
+								</ul>
+								<p>If you have already completed editing or deleting a post and the <strong>changes aren't appearing</strong>, try refreshing the page.</p>
+							</div>
+						<h3>How to Re-post?</h3>
+							<div>
+							</div>
+						<h3>How to Add Images?</h3>
+							<div></div>
+						<h3>Resend Post/Edit/Delete email?</h3>
+							<div></div>
+						<h3>User Accounts</h3>
+							<div></div>
+						<h3>Phone Verification</h3>
+							<div></div>
+						<h3>Where is My Posting?</h3>
+							<div></div>
+						<h3>Where's My Self-Publishing email?</h3>
+							<div></div>
+						<h3>Why Was My Post Deleted?</h3>
+							<div></div>
+						<h3>What Are "Flags" and "Flagging"?</h3>
+							<div></div>
+						<h3>What HTML is Supported?</h3>
+							<div></div>
+						<h3>What Are Favorites?</h3>
+							<div></div>
+						<h3>Where Can I Advertise My Services?</h3>
+							<div></div>
+						<h3>Email Rejected - Non-Generic DNS</h3>
+							<div></div>
+						<h3>Email Rejected - rDNS failure</h3>
+							<div></div>
+						<h3>More Frequently Asked Questions</h3>
+							<div></div>
+					</div>
+				</div>
+
+				<div class="tabsContent" id="paid">
+					<h1>Help, Tips, and Frequently Asked Questions</h1>
+					<div id="accordion1">
+						<h3>Vehicles by Dealer Fees</h3>
+							<div>
+								<h2>Automotive-by-Dealer Ads</h2>
+
+								<p>Rules and Resources for paid automotive-by-dealer ads (e.g. cars/trucks, boats, motorcycles, RVs, ATVs)</p>
+
+								<p><strong>Q. How long do paid automotive ads last? What is the fee? What about reposts?</strong></p>
+
+								<p>A. 30 days. Fees as listed in each category. Reposts cost the same as a new ad. (reposting paid listings)</p>
+
+								<p><strong>Q. What forms of payments are accepted?</strong></p>
+
+								<p>A. Visa, Mastercard, Amex</p>
+
+								<p><strong>Q. Are volume discounts, flat rate, or monthly "all you can eat" plans available?</strong></p>
+
+								<p>A. No. One vehicle per ad. No swapping out originally advertised vehicle for another.</p>
+
+								<p><strong>Q. Can I purchase a block of postings in advance, e.g. 200 postings for $1000?</strong></p>
+
+								<p>A. Yes, in selected cities by paid account holders. Sign up, then call 415-399-5200 x8283.</p>
+
+								<p><strong>Q. Is invoicing available?</strong></p>
+
+								<p>A. Yes, for established customers who have recently purchased a $2000 (or larger) block of postings.</p>
+
+								<p><strong>Q. Is a bulk posting API available for high volume posters?</strong></p>
+
+								<p>A. If you post 500 ads per month. Buy a $6000 block, then request bulk API access: 415-399-5200 x8283.</p>
+
+								<p><strong>Q. Is a paid posting account required?</strong></p>
+
+								<p>A. No, but they can be helpful for volume posters. Sign up here.</p>
+
+								<p><strong>Q. Can I post ads for financial services, a website, an auction, or a dealership sale/promotion?</strong></p>
+
+								<p>A. No - only specific individual vehicles for sale. Services belong in the appropriate of "services" category.</dealership>
+
+								<p><strong>Q. Are paid ads subject to automated deletion due to user flagging?</strong></p>
+
+								<p>A. No. Paid posts flagged by users are reviewed by staff before any deletions take place.</p>
+
+								<p><strong>Q. What may happen if a dealer posts in "by owner" to avoid the fee?</strong></p>
+
+								<p>A. Ad deletion, account closure, other remedial actions. Please flag any dealer ads in "by owner."</p>
+
+								<p><strong>Q. What if I have additional questions or want to comment?</strong></p>
+
+								<p>A. Please direct questions and comments to our contact form.</p>
+							</div>
+						<h3>Posting Fees</h3>
+							<div>
+								<h2>All craigslist postings are free, except for:</h2><br>
+								<ul>
+									<li>Job postings in selected areas - &#36;7-75 (fee varies by area)</li>
+									<li>Brokered apartment rentals in NYC area - &#36;10</li>
+									<li>Various by-dealer categories in the US - &#36;3-5</li>
+									<li>Cars/trucks by-dealer in the US, Vancouver BC - &#36;5</li>
+									<li>Furniture by-dealer in the US, Vancouver BC - &#36;3</li>
+									<li>Therapeutic services in the US - &#36;10 (reposts of live ads &#36;5)</li>
+								</ul>
+								<p>Visa, MasterCard, and American Express are accepted.</p>
+								<p>Paid posting accounts provide additional payment options in many cases.</p>
+								<p>Questions? Please email billing@craigslist.org.</p>
+							</div>
+						<h3>How to Submit a Paid Job Post</h3>
+							<div>
+								<p>(a fee for job ads is required in some areas)</p>
+
+								<p>Note - if you post using a craigslist account, go to your account homepage. On the far right side of the page, select an area, click "go", then follow the steps below starting with step 3.</p>
+								<ol>
+									<li><strong>Visit your local craigslist homepage</strong>, at craigslist.org. The example below is for the SF Bay Area.
+										<ul>
+											<li>Make sure the location named at the top of the page is accurate.</li>
+											<li>If the location is not correct, visit our list of available sites and choose the most appropriate one.</li>
+										</ul></li>
+									<li>Choose <strong>"post to classifieds"</strong> in the top-left corner.</li>
+									<li>Select the <strong>job offered</strong> category.</li>
+									<li><strong>Choose a category</strong> (or multiple categories) for your job.
+										<ul>
+											<li><strong>Please note</strong> that each selected category will incur a posting fee.</li>
+										</ul></li>
+
+							</div>
+						<h3>Lifespan of Posts</h3>
+							<div></div>
+						<h3>How to Edit or Delete a Paid Post</h3>
+							<div></div>
+						<h3>How to Repost a Paid Post</h3>
+							<div></div>
+						<h3>Pay and Invoice Online</h3>
+							<div></div>
+						<h3>Resources fo NYC Apartment Brokers</h3>
+							<div></div>
+						<h3>Paid Posts: Frequently Asked Questions</h3>
+							<div></div>
+						<h3>Therapuetic Services FAQ</h3>
+							<div></div>
+					</div>
+				</div>
+
+				<div class="tabsContent" id="fraud">
+					<h1>Help, Tips, and Frequently Asked Questions</h1>
+					<div id="accordion2">
+						<h3>Spotting and Avoiding Scams</h3>
+							<div></div>
+						<h3>What is "Phishing"?</h3>
+							<div></div>
+						<h3>Who is Posting Ads in my Account?</h3>
+							<div></div>
+						<h3>Why is CL emailing me to Log in?</h3>
+							<div></div>
+						<h3>Can I Trust This Great but Odd Deal?</h3>
+							<div></div>
+					</div>
+
+				</div>
+
+				<div class="tabsContent" id="legal">
+					<h1>Help, Tips, and Frequently Asked Questions</h1>
+					<div id="accordion3">
+						<h3>Law Enforcement (Subpoenas, etc)</h3>
+							<div></div>
+						<h3>Copy Right Violation</h3>
+							<div></div>
+						<h3>Personal Harassment</h3>
+							<div></div>
+						<h3>Terms of Use</h3>
+							<div></div>
+					</div>
+
+				</div>
+
+				<div class="tabsContent" id="misc">
+					<h1>Help, Tips, and Frequently Asked Questions</h1>
+					<div id="accordion4">
+						<h3>System Status</h3>
+							<div></div>
+						<h3>Searching Craigslist</h3>
+							<div></div>
+						<h3>"Help Desk" Forum</h3>
+							<div></div>
+						<h3>Contact Us</h3>
+							<div></div>
+					</div>
+
+				</div>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+		<div class="space"></div>
+<!-- Safety Tips -->
+		<div class="full safety purple">
+			<div class="container">
+				<ul>
+					<li><a href="safety.html">Safety Tips</a></li>
+					<li><a href="#">Prohibited Items</a></li>
+					<li><a href="#">Product Recalls</a></li>
+					<li><a href="#">Avoiding Scams</a></li>
+				</ul>
+			</div>
+		</div>
+<!-- Footer -->
+		<div class="footer gray">
+			<div class="container">
+				<ul>
+					<li><h3>Support</h3></li>
+					<li><a href="help.html">Help and FAQs</a></li>
+					<li><a href="#">Abuse and Legal</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">System Status</a></li>
+				</ul>
+				<ul>
+					<li><h3>About</h3></li>
+					<li><a href="#">About Craigslist</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Open Source</a></li>
+					<li><a href="#">Mobile</a></li>
+				</ul>
+				<ul>
+					<li><h3>Community</h3></li>
+					<li><a href="#">Craigslist Blog</a></li>
+					<li><a href="#">Best of Craigslist</a></li>
+					<li><a href="#">"Craigslist Joe"</a></li>
+					<li><a href="#">Craig Connect</a></li>
+				</ul>
+				<div class="clearFix"></div>
+			</div>
+		</div>
+		
+		<div class="full social purple">
+			<div class="container relative">
+				<a href="index.html"><img src="img/logo2.png" alt="white logo"></a>
+				<ul>
+					<li><a href="https://www.facebook.com/craigslist-101056018477/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/craigslist?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/explore/tags/craigslist/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/user/craigslist" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+<!-- Posting Modal -->
+
+		<div id="openModal" class="modalDialog">
+				<div class="modalBox relative">
+					<a href="#close" title="Close"><div class="close">X</div></a>
+					
+					<div id="step1" class="steps start">
+						<h3>What type of posting is this?</h3>
+						<p class="finePrint">Please limit each posting to a single area and category, once per 48 hours</p>
+							
+						<div class="posting">
+							<input type="radio" name="type">Job Offered<br>
+							<input type="radio" name="type">Gig Offered<br>
+							<input type="radio" name="type">Resume / Job Wanted<br>
+							<br>
+							<input type="radio" name="type">Housing Offered<br>
+							<input type="radio" name="type">Housing Wanted<br>
+							<br>
+							<input type="radio" name="type">For Sale by Owner<br>
+							<input type="radio" name="type">For Sale by Dealer<br>
+							<input type="radio" name="type">Wanted by Owner<br>
+							<input type="radio" name="type">Wanted by Dealer<br>
+							<br>
+							<input type="radio" name="type">Service Offered<br>
+							<br>
+							<input type="radio" name="type">Personal / Romance<br>
+							<br>
+							<input type="radio" name="type">Community<br>
+							<input type="radio" name="type">Event / Class<br>
+						</div>
+
+						<div class="clickButtons">
+								<button type="submit" onclick="clickTo('#step2')">Continue</button>
+						</div>
+					</div>
+
+
+					<div id="step2" class="steps">
+						<h3>Categories</h3>
+						<p class="finePrint">Choose one from the following</p>
+
+						<div class="posting">
+							<input type="radio" name="category">Antiques<br>
+							<input type="radio" name="category">Appliances<br>
+							<input type="radio" name="category">Arts &amp; Crafts<br>
+							<input type="radio" name="category">ATVs/UTVs/SNO<br>
+							<input type="radio" name="category">Auto Parts<br>
+							<input type="radio" name="category">Auto Wheels &amp; Tires<br>
+							<input type="radio" name="category">Baby &amp; Kids<br>
+							<input type="radio" name="category">Barter<br>
+							<input type="radio" name="category">Bicycle Parts<br>
+							<input type="radio" name="category">Bicycles<br>
+							<input type="radio" name="category">Boat Parts<br>
+							<input type="radio" name="category">Boats<br>
+							<input type="radio" name="category">Books &amp; Magazines<br>
+							<input type="radio" name="category">Business / Commercial<br>
+							<input type="radio" name="category">Cars &amp; Trucks<br>
+							<input type="radio" name="category">CDs/DVDs/VHS<br>
+							<input type="radio" name="category">Cell Phones<br>
+							<input type="radio" name="category">Clothing &amp; Accessories<br>
+							<input type="radio" name="category">Collectibles<br>
+							<input type="radio" name="category">Computer Parts<br>
+							<input type="radio" name="category">Computers<br>
+							<input type="radio" name="category">Electronics<br>
+							<input type="radio" name="category">Farm &amp; Garden<br>
+							<input type="radio" name="category">Free Stuff<br>
+							<input type="radio" name="category">Furniture<br>
+							<input type="radio" name="category">Garage &amp; Moving Sales<br>
+							<input type="radio" name="category">General<br>
+							<input type="radio" name="category">Health &amp; Beauty<br>
+							<input type="radio" name="category">Heavy Equipment<br>
+							<input type="radio" name="category">Houshold Items<br>
+							<input type="radio" name="category">Jewelry<br>
+							<input type="radio" name="category">Materials<br>
+							<input type="radio" name="category">Motorcycle Parts<br>
+							<input type="radio" name="category">Motorcycles<br>
+							<input type="radio" name="category">Musical Instruments<br>
+							<input type="radio" name="category">Photo/Video<br>
+							<input type="radio" name="category">RVs<br>
+							<input type="radio" name="category">Sporting Goods<br>
+							<input type="radio" name="category">Tickets<br>
+							<input type="radio" name="category">Tools<br>
+							<input type="radio" name="category">Toys &amp; Games<br>
+							<input type="radio" name="category">Trailers<br>
+							<input type="radio" name="category">Video Gaming<br>
+							<input type="radio" name="category">Wanted<br>
+						</div>
+
+						<div class="clickButtons">
+							<button type="submit" onclick="clickTo('#step1')">Back</button>
+							<button type="submit" onclick="clickTo('#step3')">Continue</button>
+						</div>
+					</div>
+
+
+				<div id="step3" class="steps">
+					<h3>Post Description</h3>
+					<p class="finePrint">* Be as thorough as possible in describing your posting</p>
+
+					<div class="posting">
+						<input type="text" name="twoCol" placeholder="Posting Title">
+						<input type="text" name="twoCol" placeholder="Price"><br>
+						<input type="text" name="twoCol" placeholder="Specific Location">
+						<input type="text" name="twoCol" placeholder="Postal Code"><br>
+						<textarea name="body" placeholder="Description of Product or Service"></textarea>
+					</div>
+						
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step2')">Back</button>
+						<button type="submit" onclick="clickTo('#step4')">Continue</button>
+					</div>
+				</div>
+
+
+				<div id="step4" class="steps">
+					<h3>Posting Details</h3>
+					<p class="finePrint">The more information you can provide, the more likely you will gain interest</p>
+
+					<div class="posting">
+						<input type="text" name="twoCol" placeholder="Model Year">
+						<input type="text" name="twoCol" placeholder="Make and Model"><br>
+						<input type="text" name="twoCol" placeholder="Vin Number">
+						<input type="text" name="twoCol" placeholder="Odometer (e.g. 42,000)"><br>
+						<br>
+						<select>
+							<option selected>English</option>
+						</select>
+						<select>
+							<option disabled selected>Condition</option>
+							<option>New</option>
+							<option>Like New</option>
+							<option>Excellent</option>
+							<option>Good</option>
+							<option>Fair</option>
+							<option>Salvage</option>
+						</select>
+						<select>
+							<option disabled selected>Cylinders</option>
+							<option>3 Cylinders</option>
+							<option>4 Cylinders</option>
+							<option>5 Cylinders</option>
+							<option>6 Cylinders</option>
+							<option>8 Cylinders</option>
+							<option>10 Cylinders</option>
+							<option>12 Cylinders</option>
+							<option>other</option>
+						</select><br>
+						<select>
+							<option disabled selected>Drive</option>
+							<option>Front Wheel Drive</option>
+							<option>Rear Wheel Drive</option>
+							<option>All Wheel Drive</option>
+						</select>
+						<select>
+							<option disabled selected>Fule</option>
+							<option>Gas</option>
+							<option>Diesel</option>
+							<option>Electric</option>
+							<option>Hybrid</option>
+							<option>other</option>
+						</select>
+						<select>
+							<option disabled selected>Paint Color</option>
+							<option>Black</option>
+							<option>Blue</option>
+							<option>Brown</option>
+							<option>Green</option>
+							<option>Gray</option>
+							<option>Orange</option>
+							<option>Purple</option>
+							<option>Red</option>
+							<option>Silver</option>
+							<option>White</option>
+							<option>Yellow</option>
+							<option>custom</option>
+						</select><br>
+						<select>
+							<option disabled selected>Size</option>
+							<option>Compact</option>
+							<option>Full-Size</option>
+							<option>Mid-Size</option>
+							<option>Sub-Compact</option>
+						</select>
+						<select>
+							<option disabled selected>Title Status</option>
+							<option>Clean</option>
+							<option>Salvaged</option>
+							<option>Rebuilt</option>
+							<option>Parts Only</option>
+							<option>Lien</option>
+							<option>Missing</option>
+						</select>
+						<select>
+							<option disabled selected>Transmission</option>
+							<option>Manual</option>
+							<option>Automatic</option>
+							<option>other</option>
+						</select>
+						<select>
+							<option disabled selected>Type</option>
+							<option>Bus</option>
+							<option>Convertible</option>
+							<option>Coupe</option>
+							<option>Hatchback</option>
+							<option>Mini-Van</option>
+							<option>Offroad</option>
+							<option>Pickup</option>
+							<option>Sedan</option>
+							<option>Truck</option>
+							<option>SUV</option>
+							<option>Wagon</option>
+							<option>Van</option>
+							<option>other</option>
+						</select><br>
+						<input type="checkbox" name="details" value="crypto">Cryptocurrency OK<br>
+						<input type="checkbox" name="details" value="ads">Include "More Ads by this User" link
+					</div>
+					
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step3')">Back</button>
+						<button type="submit" onclick="clickTo('#step5')">Continue</button>
+					</div>
+				</div>
+
+
+				<div id="step5" class="steps">
+					<h3>Contact Info</h3>
+					<p class="finePrint">How do you want to be reached?</p>
+
+					<div class="posting">
+						<h4><strong>email: </strong>tombeaver22@gmail.com</h4>
+						<input type="radio" name="relay">CL mail relay (recommended)
+						<input type="radio" name="relay">No replies to this email
+						<br>
+						<h4><strong>users can also contact me:</strong></h4>
+						<input type="checkbox" name="contact">by phone
+						<input type="checkbox" name="contact">by text<br>
+						<input type="text" name="number" placeholder="Phone Number">
+						<input type="text" name="number" placeholder="Extension">
+						<input type="text" name="number" placeholder="Contact Name">
+						<br>
+						<input type="checkbox" name="maps"><strong>Show on maps</strong><br>
+						<input type="text" name="twoCol" placeholder="Street Name">
+						<input type="text" name="twoCol" placeholder="Cross Street Name"><br>
+						<input type="text" name="twoCol" placeholder="City">
+						<input type="text" name="twoCol" placeholder="Zip Code">
+						<br>
+						<input type="checkbox" name="extra">OK for others to contact you about other services, products or commercial interests
+					</div>
+
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step4')">Back</button>
+						<button type="submit" onclick="clickTo('#step6')">Continue</button>
+					</div>
+				</div>
+
+
+				<div id="step6" class="steps">
+					<h3>Image Upload</h3>
+					<p class="finePrint">Upload the best image first - It will be featured<br><br>
+						Maximum of 24 images</p><br>
+
+					<div class="postImage">
+						<input type="file" id="fileInput" multiple="multiple" accept="image/*">
+					</div>
+
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step5')">Back</button>
+						<button type="submit" onclick="clickTo('#step7')">Continue</button>
+					</div>
+				</div>
+
+
+				<div id="step7" class="steps">
+					<h3>Preview and Submit</h3>
+					<p class="finePrint">Review your posting and make changes as needed before sumbitting</p>
+
+					<div class="posting">
+						<div class="preview"></div>
+
+					</div>
+
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step6')">Back</button>
+						<button type="submit" onclick="clickTo('#step8')">Submit</button>
+					</div>
+				</div>
+
+				<div id="step8" class="steps">
+
+					<div class="success">
+						<h2>Success!</h2>
+					</div>
+
+					<div class="clickButtons">
+						<button type="submit" onclick="clickTo('#step1 #close')">Close</button>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-ui-calendar.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/fullCalendar.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

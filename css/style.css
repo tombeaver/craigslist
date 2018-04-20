@@ -64,6 +64,11 @@ ul, ol { list-style: none; }
 	z-index: 1;
 }
 
+.none {
+	display: none;
+}
+
+
 .title {
 	position: fixed;
 	top: 100px;
@@ -78,6 +83,12 @@ input:focus, textarea:focus, button:focus {
   outline: none;
 }
 
+.underline {
+	height: 2px;
+	background: #5d2d80;
+	margin: 15px 0 0;
+}
+
 /*==============================================================
 							Navigation
 /*==============================================================
@@ -89,6 +100,7 @@ input:focus, textarea:focus, button:focus {
 	position: fixed;
 	z-index: 2;
 }
+
 
 nav img {
 	margin-top: 5px;
@@ -260,6 +272,16 @@ nav ul li a i {
 
 	#navSmall {
 		display: none;
+		height: 55px;
+	}
+
+	#navSmall  h1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 300px;
+		margin-left: -150px;
+		text-align: center;
 	}
 
 	.menuNav {
@@ -269,7 +291,6 @@ nav ul li a i {
 		height: 50px;
 		width: 50px;
 	}
-
 
 	.logoSmall {
 		background: url(../img/logoSmall.svg) no-repeat center;
@@ -315,7 +336,11 @@ nav ul li a i {
 		position: absolute;
 		top: 50%;
 		transform: skewY(.125turn);
+		-moz-transform: skewY(.125turn);
+		-webkit-transform: skewY(.125turn);
 		transition: .4s ease-in-out;
+		-moz-transition: .4s ease-in-out;
+		-webkit-transition: .4s ease-in-out;
 	}
 
 	.navOpen .barMenu:nth-child(2) {
@@ -327,34 +352,123 @@ nav ul li a i {
 		position: absolute;
 		top: 50%;
 		transform: skewY(-.125turn);
+		-moz-transform: skewY(-.125turn);
+		-webkit-transform: skewY(-.125turn);
 		transition: .4s ease-in-out;
+		-moz-transition: .4s ease-in-out;
+		-webkit-transition: .4s ease-in-out;
 	}
 
 	/* Menu */
 	.smallMenu {
 		position: absolute;
 		top: 50px;
-		left: 0;
-		width: 100%;
+		left: -2.6%;
+		width: 105.2%;
 		height: 0;
 		background: #f2f2f2;
-		z-index: 999;
+		z-index: 9999;
+		visibility: hidden;
+		opacity: 0;
+		text-align: center;
 		transition: .4s ease-in-out;
 	}
 
 	.heightMenu {
 		height: 100vh;
+		visibility: visible;
+		opacity: 1;
 	}
 
+	.main .content-search {
+		width: 320px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -160px;
+	}
 
+	.main .content-search input[type=text] {
+		left: 0;
+		top: 26px;
+		height: 20px;
+		width: 250px;
+	}
 
+	.main .content-search button {
+		left: 272px;
+	}
 
+	.main .content-search button:hover {
+		color: #c4b4d1;
+	}
 
+	.smallMenu h2 {
+		color: #5d2d80;
+	}
 
+	.smallMenu ul {
+		padding-left: 0;
+		margin-bottom: 4vh;
+	}
 
+	.smallMenu a {
+		text-decoration: none;
+		color: #2d2d2d;
+	}
 
+	.smallMenu ul li {
+		padding-top: 15px;
+	}
 
+	.expand {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		background: #f2f2f2;
+		width: 0;
+		height: 85vh;
+		visibility: hidden;
+		opacity: 0;
+		overflow: scroll;
+		transition: .4s ease-in-out;
+	}
 
+	.expand:target {
+		width: 100%;
+		visibility: visible;
+		opacity: 1;
+		z-index: 99999;
+	}
+
+	.expand ul {
+		padding-left: 40px;
+	}
+
+	.menuLinks {
+		margin-top: 80px;
+	}
+
+	.push {
+		padding-top: 50px;
+	}
+
+	.push li {
+		margin-bottom: 15px;
+	}
+
+	.accountPush {
+		padding-top: 50%;
+		text-align: center;
+	}
+
+	.accountPush ul {
+		padding-left: 0;
+	}
+
+	.accountPush li {
+		margin-bottom: 5px;
+	}
 
 
 
@@ -412,18 +526,28 @@ nav ul li a i {
 .profileImg {
 	background: url(../img/profile.jpg) no-repeat center;
 	background-size: cover;
-	width: 200px;
-	height: 200px;
+	width: 20%;
+	height: 0;
+	padding-top: 20%;
 	border-radius: 50px;
 	position: absolute;
 	top: 5%;
-	left: 40%;
+	left: 50%;
+	margin-left: -10%;
 }
 
 .accountInfo {
 	width: 100%;
 	position: absolute;
 	top: 55%;
+	left: 0;
+	text-align: center;
+}
+
+.accountinfo {
+	width: 100%;
+	position: absolute;
+	bottom: -150px;
 	left: 0;
 	text-align: center;
 }
@@ -457,34 +581,32 @@ nav ul li a i {
 	opacity: 0;
 	pointer-events: none;
 	transition: .3s ease-in-out;
-	-mox-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
 	-webkit-transition: .3s ease-in-out;
 }
 
 .modalDialog:target {
 	visibility: visible;
 	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog input {
+	margin-right: 10px;
+	z-index: 9999;
 }
 
 .modalBox {
 	color: #2d2d2d;
 	width: 600px;
 	height: 500px;
-	margin: 10% auto;
+	margin: 9% auto;
+	padding: 10px;
 	background: #f2f2f2;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	z-index: 9999;
-}
-
-.modalDialog:target {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.modalDialog input {
-	margin-right: 10px;
 }
 
 .close {
@@ -504,7 +626,7 @@ nav ul li a i {
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
-	}
+}
 
 .steps {
 	visibility: hidden;
@@ -515,13 +637,19 @@ nav ul li a i {
 .steps h3 {
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 0;
+	width: 90%;
+	margin: 0 2.5%;
+	text-align: center;
 }
 
 .steps p {
 	position: absolute;
 	top: 40px;
-	left: 20px;
+	left: 0;
+	width: 90%;
+	margin: 0 5%;
+	text-align: center;
 }
 
 .start {
@@ -531,11 +659,25 @@ nav ul li a i {
 
 .posting {
 	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 90%;
+	height: 60%;
+	padding: 0 5%;
+	margin-left: -20%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.inputField {
+	position: absolute;
 	top: 80px;
-	left: 20px;
+	left: 0;
 	height: 360px;
-	width: 100%;
-	overflow: hidden;
+	width: 90%;
+	padding: 0 5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .postImage {
@@ -547,17 +689,18 @@ nav ul li a i {
 	overflow: hidden;
 }
 
-.steps input[name=type], .steps input[name=category] {
-	margin-left: 200px;
+.steps input[name=twoCol] {
+	width: 46%;
+	margin: 5px 3% 10px 0;
+	border: none;
 }
 
-.steps input[name=twoCol] {
-	width: 35%;
-	margin: 5px 10px 10px 0;
+.steps input[name=twoCol]:nth-child(even) {
+	margin-right: 0;
 }
 
 .steps textarea[name=body] {
-	width: 90%;
+	width: 95%;
 	height: 60%;
 }
 
@@ -605,25 +748,37 @@ nav ul li a i {
 }
 
 
-.clickButtons button, .clickButtons a {
-	width: 80px;
+.clickButtons button {
+	width: 49%;
 	background: #5d2d80;
 	color: #fff;
-	margin-right: 20px;
-	padding: 5px;
+	padding: 15px 0;
+	margin: 10px 0 5px;
 	border: none;
-	border-radius: 8px;
+	text-decoration: none;
+}
+
+.clickButtons button:nth-child(even) {
+	float: right;
+}
+
+.clickButton button, .clickButton a {
+	width: 100%;
+	background: #5d2d80;
+	color: #fff;
+	padding: 15px 0;
+	margin: 10px 0 5px;
+	border: none;
 	text-decoration: none;
 }
 
 
-.clickButtons {
-	text-align: center;
-	width: 220px;
-	margin-left: -110px;
+.clickButtons, .clickButton {
+	width: 100%;
 	position: absolute;
 	bottom: 20px;
-	left: 50%;
+	left: 25%;
+	margin-left: -25%;
 }
 
 /*==============================================================
@@ -746,6 +901,15 @@ nav ul li a i {
 	color: #c4b4d1;
 }
 
+.socialTips {
+	display: none;
+}
+ .socialTips i {
+ 	font-size: 1.5em;
+ }
+
+
+
 /*==============================================================
 							Homepage
 /*==============================================================
@@ -753,11 +917,21 @@ nav ul li a i {
 ==============================================================*/
 
 .orlando {
-	background: url("../img/orlando.jpg") no-repeat top;
+	background: url("../img/orlando2.jpg") no-repeat top;
 	background-size: cover;
-	height: 461px;
+	height: 400px;
 }
 
+.orlando h1 {
+	position: absolute;
+	bottom: 131.5px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 20em;
+	color: #fff;
+	margin: 0;
+}
 
 .search {
 	text-align: center;
@@ -1179,8 +1353,8 @@ nav ul li a i {
 ==============================================================*/
 
 .content {
-	padding: 10px;
-	margin-top: 10px;
+	padding: 1%;
+	margin-top: 30px;
 	width: 78%;
 	float: right;
 }
@@ -1236,21 +1410,24 @@ nav ul li a i {
 }
 
 .searchResult img {
-	width: 250px;
-	margin: 10px;
+	width: 20%;
+	margin: 2.5%;
 	float: left;
 }
 
 .summary {
-	width: 626px;
-	margin: 10px;
+	width: 70%;
+	margin: 20px 2.5% 0;
+	padding-bottom: 20px;
 	float: left;
 }
 
 .summary a h2 {
 	color: #5d2d80;
 	font-size: 2.5em;
+	line-height: 1.2em;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .summary h4 {
@@ -1273,14 +1450,17 @@ nav ul li a i {
 
 .third {
 	text-align: center;
-	width: 60px;
+	width: 30%;
 	float: left;
-	margin: 10px 40px 10px 0;
+	text-align: center;
+	margin: 10px 3% 10px 0;
 }
 
 .description {
 	margin-left: 10px;
 }
+
+
 
 .date {
 	font-size: 12px;
@@ -1289,32 +1469,79 @@ nav ul li a i {
 	right: 20px;
 }
 
+.page {
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+}
+
 .pagination {
 	display: block;
-	width: 40%;
-	margin: 0 30%;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+	text-align: center;
 }
 
 .pagination a {
+	width: 6.6%;
 	color: #2b2b2b;
     float: left;
-    padding: 8px 16px;
+    padding: 8px 0;
     text-decoration: none;
     transition: .3s ease-in-out;
 }
 
 .pagination p {
+	width: 6.6%;
 	font: 18px/20px "Montserrat";
 	display: inline;
 	background: #5d2d80;
 	color: #fff;
 	float: left;
-    padding: 8px 16px;
+    padding: 8px 0;
 }
 
 .over:hover {
 	background: #c4b4d1;
 }
+
+/*==============================================================
+							Filter
+==============================================================*/
+
+.filter {
+	margin: 3%;
+	padding: 10px 0;
+	text-align: center;
+	border: 1px solid black;
+	display: none;
+}
+
+.filter h2 {
+	margin-left: 5px;
+}
+
+		/* Filter Menu */
+		.filterMenu {
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+			background: #f2f2f2;
+			transition: .4s ease-in-out;
+		}
+
+		.off {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			background: #fff;
+			transition: .4s ease-in-out;
+		}
 
 
 /*==============================================================
@@ -1333,7 +1560,6 @@ nav ul li a i {
 }
 
 .thumbnails {
-	height: 720px;
 	width: 15%;
 	margin-left: 5%;
 	float: right;
@@ -1343,6 +1569,10 @@ nav ul li a i {
 .thumbnails img {
 	width: 100%;
 	padding-bottom: 5%;
+}
+
+.singleProductPage {
+	background: #fff;
 }
 
 .singleProductPage h1 {
@@ -1372,28 +1602,95 @@ nav ul li a i {
   	user-select: none;
 }
 
+.mark {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+	display: none;
+}
+
+.markContent {
+	border-top: 10px solid #fff;
+}
+
+.mark h1 {
+	padding: 0 0 0 10px;
+
+}
+
+.tabMark {
+	position: absolute;
+	bottom: -118px;
+	left: 0;
+	width: 7.3%;
+	height: 100px;
+	background: #f2f2f2;
+	text-align: center;
+
+}
+
+.tabMark i {
+	width: 60%;
+	margin-top: 20px;
+	font-size: 1.5em;
+	color: #5d2d80;
+}
+
+.tabFavorite input {
+	position: absolute;
+ 	top: 60px;
+  	left: 50%;
+  	height: 20px;
+  	width: 20px;
+  	margin-left: -10px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.tabFavorited  {
+	position: absolute;
+ 	top: 60px;
+  	left: 50%;
+  	height: 20px;
+  	width: 20px;
+  	margin-left: -10px;
+  	background: url(../img/icons/heartFill.png) no-repeat center center;
+  	background-size: contain;
+}
+
+.tabFavorite input:checked ~ .tabFavorited {
+	background: url(../img/icons/heartOutline.png) no-repeat center center;
+	background-size: contain;
+}
+
 /* for input styles see Categories / Result Field
 
 /*==============================================================
 							Description
 ==============================================================*/
 
-.productDetails {
-	margin: 20px 0;
-}
+
 
 .productDescription {
 	background: #f2f2f2;
-	width: 50%;
-	padding: 25px;
-	margin-right: 5%;
+	width: 45%;
+	margin: 5% 2.5% 5% 0;
+	padding: 2.5%;
 	float: left;
+	overflow-wrap: break-word;
 }
 
 .productLocation {
-	width: 40%;
-	margin-right: 10px;
-	float: left;
+	width: 45%;
+	margin: 5% 0 5% 2.5%;
+	float: right;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
 }
 
 .productDescription h2 {
@@ -1434,7 +1731,7 @@ nav ul li a i {
 }
 
 .border {
-	padding: 10px;
+	padding: 6px;
 	margin: 10px;
 	border: 1px solid #2b2b2b;
 }
@@ -1456,6 +1753,10 @@ nav ul li a i {
 /*==============================================================
 							Help and Safety Pages
 ==============================================================*/
+
+.helpSafety {
+	display: none;
+}
 
 .helpPage p {
 	font-size: 16px;
@@ -1517,14 +1818,13 @@ nav ul li a i {
 
 
 .safetyPage img {
-	width: 35%;
-	margin: 20px 5% 10px 0;
-	height: 210px;
+	margin: 60px 0 10px 0;
+	width: 300px;
 	float: left;
 }
 
 .safety-content {
-	width: 60%;
+	width: 100%;
 	float: left;
 }
 
@@ -1534,7 +1834,8 @@ nav ul li a i {
 }
 
 .safetyFull {
-	width: 100%;
+	width: calc(100% - 330px);
+	float: right;
 }
 
 .safetyFull p {
@@ -1557,9 +1858,9 @@ nav ul li a i {
 .safetyLinks {
 	position: relative;
 	display: inline-block;
-	width: 200px;
+	width: 20%;
 	height: 120px;
-	margin: auto;
+	margin: 2%;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -1625,6 +1926,9 @@ nav ul li a i {
 	outline: none;
 }
 
+.ui-corner-all {
+	border-radius: 0;
+}
 
 
 /*==============================================================
@@ -1642,19 +1946,25 @@ nav ul li a i {
 	}
 
 	.container {
-		width: 100%;
+		width: 95%;
+		padding: 0 2.5%
 	}
 
 	.cateSize {
 		width: 15%;
 		margin: 5%;
 	}
+
+	.orlando h1 {
+		bottom: 93px;
+		font-size: 15em;
+	}
 }
 
 /*==============================================================
-							1024px
+							1050px
 ==============================================================*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1050px) {
 	
 /* Mobile App */
 	.mobile {
@@ -1701,6 +2011,37 @@ nav ul li a i {
 		width: 100px;
 		margin: 15px;
 	}
+
+	/* Side Frame */
+	#accordion input[type=text] {
+		width: 90%;
+	}
+
+
+	#accordion5 h3 {
+		text-align: center;
+	}
+
+	#accoridon5 .filterType {
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		margin-left: -25%;
+	}
+
+/* product description and location */
+	.productDescription {
+		background: #f2f2f2;
+		width: 95%;
+		margin: 5% 2.5%;
+		float: left;
+	}
+
+	.productLocation {
+		width: 95%;
+		margin: 5% 2.5%;
+		float: right;
+	}
 }
 
 /*==============================================================
@@ -1716,6 +2057,41 @@ nav ul li a i {
 	#navSmall {
 		display: block;
 	}
+
+/* Help */
+	.tabsMenu {
+		width: 100%;
+		margin-right: 0%;
+		margin-top: 20px;
+		float: left;
+		background: #fff;
+	}
+
+	.helpSafety {
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 0;
+		display: block;
+	}
+	.tabsContent h1 {
+		display: none;
+	}
+
+	.tabsContent, .safetyContent {
+		width: 100%;
+	}
+
+	.tabsContent h3 {
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.orlando h1 {
+		bottom: 58px;
+		font-size: 10em;
+	}
+
+	
 }
 
 /*==============================================================
@@ -1729,14 +2105,21 @@ nav ul li a i {
 	}	
 
 
-
-	
-
 /* Footer */
-	.safety li{
-		width: 30%;
-		padding: 0;
-		margin: 5px 0;
+	.safety ul:first-child {
+		display: none;
+	}
+
+	.safety ul:last-child {
+		display: block;
+	}
+
+	.social ul {
+		display: none;
+	}
+
+	.social {
+		text-align: center;
 	}
 
 	.footer ul {
@@ -1784,6 +2167,99 @@ nav ul li a i {
 		width: 100%;
 		margin-left: 0;
 	}
+
+/* Side Frame and Results */
+	.sideFrame {
+		display: none;
+	}
+
+	.content {
+		width: 98%;
+		margin-top: 0;
+	}
+
+	.searchResult i {
+		display: none;
+	}
+
+	.heart {
+		position: absolute;
+		top: 12px;
+		right: 20px;
+	}
+
+/* Filter */
+	.filter {
+		display: block;
+	}
+
+/* Safety */
+	.safetyContent h1 {
+		text-align: center;
+	}
+
+	.safetyLinks {
+		width: 45%;
+		height: 200px;
+		margin: 5% 2%;
+	}
+
+	.safetyFull {
+		width: 100%;
+	}
+
+	.safetyPage img {
+		display: block;
+		margin-left: calc(50% - 150px);
+		margin-top: 0;
+	}
+
+}
+
+
+/*==============================================================
+							768px
+==============================================================*/
+@media screen and (max-width: 768px) {
+
+	.modalDialog {
+		top: 59px;
+		background: none;
+	}
+
+	.modalDialog input {
+		margin-right: 10px;
+		z-index: 9999;
+	}
+
+	.modalBox {
+		color: #2d2d2d;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		background: #f2f2f2;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+
+	.close {
+		display: none;
+	}
+
+	.clickButtons, .clickButton {
+		padding-bottom: 10%;
+	}
+
+	.profileImg {
+		width: 30%;
+		padding-top: 30%;
+		margin-left: -15%;
+	}
+
+	.accountPush {
+		padding-top: 70%;
+	}
 }
 
 /*==============================================================
@@ -1792,14 +2268,7 @@ nav ul li a i {
 @media screen and (max-width: 720px) {
 
 /* Footer */
-	.safety li{
-		width: 100%;
-		padding: 0;
-	}
 
-	.safety ul li {
-		padding: 0;
-	}
 
 	.footer ul {
 		padding: 0 1%;
@@ -1818,12 +2287,199 @@ nav ul li a i {
 	.social ul {
 		display: none;
 	}
+
+/* Results */
+	.description {
+		margin: 10px 0;
+	}
+
+	.pOpen {
+		display: none;
+		overflow: hidden;
+	}
+
+	.description h4 {
+		width: 80%;
+		color: #fff;
+		background: #5d2d80;
+		padding: 2px 10%;
+		text-align: center;
+		border-radius: 3px;
+	}
+
+/* Gallery */
+	.largeImage {
+		width: 90%;
+		height: auto;
+		margin: 5%;
+	}
+
+	.thumbnails {
+		height: 105px;
+		width: 90%;
+		margin: 0 5% 5%;
+		float: left;
+		white-space: nowrap;
+		overflow-y: hidden;
+		overflow: scroll;
+	}
+
+	.thumbnails img {
+		width: 150px;
+		height: 100px;
+		padding: 0 5% 0 0;
+	}
+
+	.thumbnails img:last-child {
+		padding-right: 0;
+	}
+
+	.productDescription {
+		width: 90%;
+		margin: 2.5%;
+	}
+
+	.productLocation {
+		width: 95%;
+		margin: 2.5%;
+	}
+
+	.nonMark {
+		display: none;
+	}
+
+	.mark {
+		display: block;
+	}
+
+/* Bread Crumbs */
+	.bread {
+		display: none;
+	}
+
+/* Title */
+	.title {
+		top: 70px;
+	}
+
+
+	.lose {
+		display: none;
+	}
+
+/* Safety */
+	.safetyContent img {}
+
 }
 
 /*==============================================================
-							600px
+							660px
 ==============================================================*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
+
+/* Title on SingleProduct */
+	.singleProductPage h1, .mark h1 {
+		font-size: 1.1em;
+	}
+
+	.tabMark {
+		bottom: -111px;
+	}
+
+/* Safety */ 
+	.safetyLinks {
+		width: 95%;
+		height: 200px;
+	}
+
+	.safetyLinks p {
+		bottom: 0;
+		top: -45px;
+	}
+
+	.safetyFull p {
+		margin-bottom: 20px;
+	}
+}
+
+/*==============================================================
+							610px
+==============================================================*/
+@media screen and (max-width: 610px) {
+	.none {
+		display: block;
+	}
+
+/* Modal */
+
+	.steps select {
+		width: 40%;
+		margin: 5px 5% 10px 5%;
+	}
+
+	.steps input[name=number] {
+		width: 28%;
+		margin: 5px 10px 10px 0;
+	}
+
+	.steps input[type=checkbox] {
+		margin: 10px 5px;
+	}
+
+	.steps input[name=relay] {
+		margin: 10px 5px;
+	}
+
+	.preview {
+		background: url(../img/preview.jpg) no-repeat center center;
+		background-size: contain;
+		width: 100%;
+		height: 300px;
+		margin-left: -50px;
+	}
+
+	.success {
+		text-align: center;
+		width: 100px;
+		margin-left: -65px;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+	}
+
+	.orlando h1 {
+		bottom: 37px;
+		font-size: 7em;
+	}
+
+	.orlando {
+		background: url("../img/orlando2.jpg") no-repeat top;
+		background-size: cover;
+		height: 250px;
+	}
+
+	.searchResult img {
+		width: 90%;
+		margin: 2.5% 2.5%;
+		float: left;
+	}
+
+	.summary {
+		width: 90%;
+		margin: 20px 5% 0;
+		float: left;
+	}
+
+	.profileImg {
+		width: 40%;
+		padding-top: 40%;
+		margin-left: -20%;
+		top: 2%;
+	}
+
+	.accountPush {
+		padding-top: 93%;
+	}
 
 }
 
@@ -1840,6 +2496,81 @@ nav ul li a i {
 	.hide {
 		text-align: center;
 	}
+
+/* Tab Mark */
+	.tabMark {
+		width: 35px;
+	}
+
+/* Modal */
+	
+	.steps select {
+		width: 60%;
+		margin: 10px 20% 5px 20%;
+		text-align: center;
+	}
+
+	.orlando h1 {
+		bottom: 20px;
+		font-size: 5em;
+	}
+
+/* Small Menu Nav */
+	.main {
+		padding-left: 10%;
+	}
+
+	.smallMenu {
+		text-align: left;
+	}
+
+
+	.accountinfo h3 {
+		margin-left: -5%;
+	}
+
+
+}
+
+/*==============================================================
+							420px
+==============================================================*/
+@media screen and (max-width: 420px) {
+	
+	.steps input[name=twoCol] {
+		width: 90%;
+	}
+
+	.searchResult img {
+		width: 80%;
+		margin: 2.5% 5%;
+		float: left;
+	}
+
+	.profileImg {
+		width: 40%;
+		padding-top: 40%;
+		margin-left: -20%;
+		top: 0;
+	}
+
+	.accountinfo {
+		bottom: -145px;
+	}
+
+	.accountPush {
+		padding-top: 80%;
+	}
+
+	.accountPush li {
+		padding-top: 20px;
+	}
+
+
+	.accountinfo h3 {
+		margin-left: -10%;
+	}
+
 }
 
 /*==============================================================
@@ -1854,13 +2585,30 @@ nav ul li a i {
 	.cateSize:first-child {
 		margin-top: 5%;
 	}
+
+	.accountinfo h3 {
+		margin-left: -15%;
+	}
+
 }
 
 /*==============================================================
 							360px
 ==============================================================*/
 @media screen and (max-width: 360px) {
+	.clickButtons, .clickButton {
+		padding-bottom: 10px;
+	}
 
+	.accountinfo h3 {
+		margin-left: -20%;
+	}
+
+	.profileImg {
+		width: 30%;
+		padding-top: 30%;
+		margin-left: -15%;
+	}
 }
 
 

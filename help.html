@@ -663,7 +663,7 @@
 
 				<!-- Hamburger Navigation -->
 				<div id="navSmall" class="relative">
-					<div class="logoSmall"></div>
+					<a href="index.html"><div class="logoSmall"></div></a>
 					<div class="menuNav">
 						<div class="navMenu relative">
 							<div class="barMenu"></div>
@@ -689,12 +689,15 @@
 <!-- FAQs -->
 		<div class="full">
 			<div class="container relative helpPage">
+				<h1 class="helpSafety">Help, Tips, and Frequently Asked Questions</h1>
+				<div class="helpSafety underline"></div>
+
 				<div class="tabsMenu">
-					<button class="tablinks activeTab" onclick="openTab('#postings')">Classified Postings</button>
-					<button class="tablinks" onclick="openTab('#paid')">Paid Postings</button>
-					<button class="tablinks" onclick="openTab('#fraud')">Avoiding Scams and Fraud</button>
-					<button class="tablinks" onclick="openTab('#legal')">LEGAL, Copyright, Harassment</button>
-					<button class="tablinks" onclick="openTab('#misc')">Miscellaneous</button>
+					<button a href="#postings" class="tablinks activeTab" onclick="openTab('#postings')">Classified Postings</button>
+					<button a href="#paid" class="tablinks" onclick="openTab('#paid')">Paid Postings</button>
+					<button a href="#fraud" class="tablinks" onclick="openTab('#fraud')">Avoiding Scams and Fraud</button>
+					<button a href="#legal" class="tablinks" onclick="openTab('#legal')">LEGAL, Copyright, Harassment</button>
+					<button a href="#misc" class="tablinks" onclick="openTab('#misc')">Miscellaneous</button>
 				</div>
 
 				<div class="tabsContent defaultOpen" id="postings">
@@ -1005,12 +1008,18 @@
 		<div class="space"></div>
 <!-- Safety Tips -->
 		<div class="full safety purple">
-			<div class="container">
+			<div class="container relative">
 				<ul>
 					<li><a href="safety.html">Safety Tips</a></li>
 					<li><a href="#">Prohibited Items</a></li>
 					<li><a href="#">Product Recalls</a></li>
 					<li><a href="#">Avoiding Scams</a></li>
+				</ul>
+				<ul class="socialTips">
+					<li><a href="https://www.facebook.com/craigslist-101056018477/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/craigslist?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/explore/tags/craigslist/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/user/craigslist" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -1042,10 +1051,10 @@
 				<div class="clearFix"></div>
 			</div>
 		</div>
-		
+
 		<div class="full social purple">
 			<div class="container relative">
-				<a href="index.html"><img src="img/logo2.png" alt="white logo"></a>
+				<a href="javascript:" id="return-to-top"><img src="img/logo2.png" alt="white logo"></a>
 				<ul>
 					<li><a href="https://www.facebook.com/craigslist-101056018477/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a href="https://twitter.com/craigslist?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -1054,10 +1063,10 @@
 				</ul>
 			</div>
 		</div>
-
+		
 <!-- Posting Modal -->
 
-		<div id="openModal" class="modalDialog">
+		<div id="modal" class="modalDialog">
 				<div class="modalBox relative">
 					<a href="#close" title="Close"><div class="close">X</div></a>
 					
@@ -1086,7 +1095,7 @@
 							<input type="radio" name="type">Event / Class<br>
 						</div>
 
-						<div class="clickButtons">
+						<div class="clickButton">
 								<button type="submit" onclick="clickTo('#step2')">Continue</button>
 						</div>
 					</div>
@@ -1154,11 +1163,11 @@
 					<h3>Post Description</h3>
 					<p class="finePrint">* Be as thorough as possible in describing your posting</p>
 
-					<div class="posting">
+					<div class="inputField">
 						<input type="text" name="twoCol" placeholder="Posting Title">
-						<input type="text" name="twoCol" placeholder="Price"><br>
+						<input type="text" name="twoCol" placeholder="Price">
 						<input type="text" name="twoCol" placeholder="Specific Location">
-						<input type="text" name="twoCol" placeholder="Postal Code"><br>
+						<input type="text" name="twoCol" placeholder="Postal Code">
 						<textarea name="body" placeholder="Description of Product or Service"></textarea>
 					</div>
 						
@@ -1173,11 +1182,11 @@
 					<h3>Posting Details</h3>
 					<p class="finePrint">The more information you can provide, the more likely you will gain interest</p>
 
-					<div class="posting">
+					<div class="inputField">
 						<input type="text" name="twoCol" placeholder="Model Year">
-						<input type="text" name="twoCol" placeholder="Make and Model"><br>
+						<input type="text" name="twoCol" placeholder="Make and Model">
 						<input type="text" name="twoCol" placeholder="Vin Number">
-						<input type="text" name="twoCol" placeholder="Odometer (e.g. 42,000)"><br>
+						<input type="text" name="twoCol" placeholder="Odometer (e.g. 42,000)">
 						<br>
 						<select>
 							<option selected>English</option>
@@ -1201,7 +1210,7 @@
 							<option>10 Cylinders</option>
 							<option>12 Cylinders</option>
 							<option>other</option>
-						</select><br>
+						</select>
 						<select>
 							<option disabled selected>Drive</option>
 							<option>Front Wheel Drive</option>
@@ -1230,7 +1239,7 @@
 							<option>White</option>
 							<option>Yellow</option>
 							<option>custom</option>
-						</select><br>
+						</select>
 						<select>
 							<option disabled selected>Size</option>
 							<option>Compact</option>
@@ -1270,7 +1279,7 @@
 							<option>other</option>
 						</select><br>
 						<input type="checkbox" name="details" value="crypto">Cryptocurrency OK<br>
-						<input type="checkbox" name="details" value="ads">Include "More Ads by this User" link
+						<input type="checkbox" name="details" value="ads">Include "More Ads by this User" link<br><br><br>
 					</div>
 					
 					<div class="clickButtons">
@@ -1284,7 +1293,7 @@
 					<h3>Contact Info</h3>
 					<p class="finePrint">How do you want to be reached?</p>
 
-					<div class="posting">
+					<div class="inputField">
 						<h4><strong>email: </strong>tombeaver22@gmail.com</h4>
 						<input type="radio" name="relay">CL mail relay (recommended)
 						<input type="radio" name="relay">No replies to this email
@@ -1349,9 +1358,8 @@
 						<h2>Success!</h2>
 					</div>
 
-					<div class="clickButtons">
-						<button type="submit" onclick="clickTo('#step1 #close')">Close</button>
-						
+					<div class="clickButton">
+						<a href="#close">Close</a>
 					</div>
 				</div>
 			</div>

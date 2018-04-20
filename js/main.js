@@ -51,17 +51,17 @@
 
     }
 
+
+    
+
     // opens hamburger menu
         $(function() {
             $(".menuNav").click(function() {
                 $(".navMenu").toggleClass("navOpen");
-            })
-            $(".menuNav").click(function() {
                 $(".smallMenu").toggleClass("heightMenu");
-            })
-            $(".menuNav").click(function() {
+                $(".markContent").toggleClass("none");
                 $("body").toggleClass("overflow");
-            })
+            });
         });
 
 
@@ -108,7 +108,7 @@ $(function(){
 	});
 
 	// Side Frame Accordion
-    $( "#accordion, #accordion0, #accordion1, #accordion2, #accordion3, #accordion4" ).accordion({
+    $( "#accordion, #accordion0, #accordion1, #accordion2, #accordion3, #accordion4, #accordion5" ).accordion({
       heightStyle: "content",
       collapsible: true,
       active: false
@@ -126,7 +126,28 @@ $(function(){
     	$(".largeImage").append($img);
     });
 
+    // Click on Description h4 and it will reveal the p tag
+    $(".description h4").click(function() {
+        $("p").toggle(1000);
+    })
 
-} );
+    // Filter Menu
+    $(".filter").click(function() {
+        $(".filterMenu").toggleClass("off");
+        $("body").toggleClass("overflow");
+        $(".filter h2").text("Close");
+    })
+
+    // The height of the thumbnails is the same height as the largeImage
+    if ((screen.width>720)) {
+        $(".thumbnails").css({ 
+            height: ($(".largeImage").height() + "px")
+        })
+    }
+
+
+
+
+});
 
 
